@@ -27,7 +27,7 @@ RSpec.describe User, type: :model do
     end
   end
 
-  xdescribe 'callbacks' do
+  describe 'callbacks' do
     it 'broadcasts append to users after create' do
       expect {
         create(:user)

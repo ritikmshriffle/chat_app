@@ -30,7 +30,7 @@ jobs:
         with:
           ruby-version: 3.0.0
           bundler-cache: true
-          cache_version: 1
+          cache: true
       
       - name: Test
         run: bundle exec rspec
