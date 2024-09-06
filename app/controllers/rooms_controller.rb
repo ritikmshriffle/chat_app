@@ -1,5 +1,6 @@
-class RoomsController < ApplicationController
+# frozen_string_literal: true
 
+class RoomsController < ApplicationController
   def index
     @current_user = current_user
     redirect_to '/signin' unless @current_user
@@ -13,7 +14,7 @@ class RoomsController < ApplicationController
   end
 
   def create
-    @room = Room.create(name: params["room"]["name"])
+    @room = Room.create(name: params['room']['name'])
   end
 
   def show
@@ -25,7 +26,6 @@ class RoomsController < ApplicationController
     @messages = @single_room.messages
     @message = Message.new
 
-
-    render "index"
+    render 'index'
   end
 end
