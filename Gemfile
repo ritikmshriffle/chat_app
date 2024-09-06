@@ -74,3 +74,7 @@ gem "rspec-rails", "~> 7.0"
 gem "factory_bot_rails", "~> 6.4"
 
 gem "faker", "~> 3.4"
+
+gem "rubocop", "~> 1.66"
+
+gem "simplecov-json", "~> 0.2.3"
