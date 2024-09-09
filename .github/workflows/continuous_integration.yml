@@ -5,6 +5,9 @@ on:
     branches_ignore:
       - main
 
+env:
+  MINIMUM_COVERAGE: 90
+
 jobs:
   ci_validation:
     runs-on: ubuntu-latest
