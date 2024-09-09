@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
@@ -29,9 +31,9 @@ RSpec.describe User, type: :model do
 
   xdescribe 'callbacks' do
     it 'broadcasts append to users after create' do
-      expect {
+      expect do
         create(:user)
-      }.to have_broadcasted_to("users").with(a_hash_including(action: :append))
+      end.to have_broadcasted_to('users').with(a_hash_including(action: :append))
     end
   end
 end
