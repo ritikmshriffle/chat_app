@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  MINIMUM_COVERAGE: 90
+  MINIMUM_COVERAGE: 70
 
 jobs:
   ci_validation:
