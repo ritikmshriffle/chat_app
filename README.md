@@ -13,13 +13,11 @@ A Rails application for managing AWS Cognito user permissions and roles.
 ## Environment Setup
 
 1. Clone the repository:
-
-git clone git@github.com:Robustrade/web-backoffice-cognito-rails.git
+   - `git clone git@github.com:Robustrade/web-backoffice-cognito-rails.git`
 
 
 2. Install dependencies:
-
-bundle install
+   - `bundle install`
 
 
 3. Configure environment variables:
@@ -27,8 +25,7 @@ bundle install
    - Fill in all required environment variables
 
 4. Set up credentials for production:
-
-RAILS_ENV=production rails credentials:edit
+   - `RAILS_ENV=production rails credentials:edit`
 
 
 ## Running the Application
@@ -36,22 +33,20 @@ RAILS_ENV=production rails credentials:edit
 ### Development
 
 1. Start Redis server
+   - `redis-server`
 
 2. Start Sidekiq:
-
-bundle exec sidekiq
+   - `bundle exec sidekiq`
 
 
 3. Start Rails server:
-
-rails server -b 0.0.0.0 -d
+   - `rails server -b 0.0.0.0 -d`
 
 
 ### Production
 
 Start Rails server in production mode:
-
-RAILS_ENV=production rails server -b 0.0.0.0 -d
+   - `RAILS_ENV=production rails server -b 0.0.0.0 -d`
 
 
 ## Server Options
@@ -66,3 +61,5 @@ RAILS_ENV=production rails server -b 0.0.0.0 -d
 - Make sure all environment variables are properly configured before starting the application
 
 ## License
+
+   - To be Added
